@@ -7,22 +7,16 @@ pipeline
 				bat 'del /f out_artifacts/*'
 				
 				}
-			stage('Running Framework'){
+				}
+			stage('Running Framework')
 			{
 				step
 				{
 				bat 'python SLFramework.py'
 				}
 			}
-			post {
-        success {
-            junit '**/target/*.xml'
-        }
-        failure {
-            mail to: team@example.com, subject: 'The Pipeline failed :('
-        }
-    }
 			
-}
+			
+
 }
 }
