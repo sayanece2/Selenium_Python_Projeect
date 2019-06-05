@@ -4,7 +4,7 @@ pipeline
 		stages{
 			stage('Cleaning Up'){
 				steps{
-				bat 'del /f out_artifacts/*'
+				bat 'del /f out_artifacts\*'
 				
 				}
 				}
