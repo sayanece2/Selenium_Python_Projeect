@@ -3,14 +3,14 @@ pipeline
 	agent { label 'master' }
 		stages{
 			stage('Cleaning Up'){
-				step{
+				steps{
 				bat 'del /f out_artifacts/*'
 				
 				}
 				}
 			stage('Running Framework')
 			{
-				step
+				steps
 				{
 				bat 'python SLFramework.py'
 				}
