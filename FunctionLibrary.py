@@ -63,6 +63,9 @@ def setup(tcName):
         print("Set Up done")
         log=open(TcPath+"\\"+"log.txt", "a")
         log.close()
+        reslog=open("res_link.txt", "a")
+        reslog.write(path)
+        reslog.close()
         return TcPath
     except:
         print("Could not create directory")
