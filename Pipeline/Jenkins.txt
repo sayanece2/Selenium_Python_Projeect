@@ -6,7 +6,7 @@ pipeline
 				steps{
 				
 				echo "Working in::"
-				echo pwd
+				echo workspace
 				}
 				}
 			
