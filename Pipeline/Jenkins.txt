@@ -4,17 +4,11 @@ pipeline
 		stages{
 			stage('Cleaning Up'){
 				steps{
-				bat 'del /f out_artifacts\*'
 				
+				echo "Starting.."
 				}
 				}
-			stage('Running Framework')
-			{
-				steps
-				{
-				bat 'python SLFramework.py'
-				}
-			}
+			
 			
 			
 
